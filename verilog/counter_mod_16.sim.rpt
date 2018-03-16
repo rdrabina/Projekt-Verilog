@@ -1,0 +1,367 @@
+Simulator report for counter_mod_16
+Thu Jan 04 15:44:25 2018
+Quartus II Version 9.0 Build 235 06/17/2009 Service Pack 2 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. Coverage Summary
+  6. Complete 1/0-Value Coverage
+  7. Missing 1-Value Coverage
+  8. Missing 0-Value Coverage
+  9. Simulator INI Usage
+ 10. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2009 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------+
+; Simulator Summary                          ;
++-----------------------------+--------------+
+; Type                        ; Value        ;
++-----------------------------+--------------+
+; Simulation Start Time       ; 0 ps         ;
+; Simulation End Time         ; 1.0 us       ;
+; Simulation Netlist Size     ; 85 nodes     ;
+; Simulation Coverage         ;      13.64 % ;
+; Total Number of Transitions ; 329          ;
+; Simulation Breakpoints      ; 0            ;
+; Family                      ; Stratix II   ;
+; Device                      ; EP2S15F484C3 ;
++-----------------------------+--------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                             ;
++--------------------------------------------------------------------------------------------+-------------------+---------------+
+; Option                                                                                     ; Setting           ; Default Value ;
++--------------------------------------------------------------------------------------------+-------------------+---------------+
+; Simulation mode                                                                            ; Timing            ; Timing        ;
+; Start time                                                                                 ; 0 ns              ; 0 ns          ;
+; Simulation results format                                                                  ; CVWF              ;               ;
+; Vector input source                                                                        ; counter_mod_16.sv ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On                ; On            ;
+; Check outputs                                                                              ; Off               ; Off           ;
+; Report simulation coverage                                                                 ; On                ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On                ; On            ;
+; Display missing 1-value coverage report                                                    ; On                ; On            ;
+; Display missing 0-value coverage report                                                    ; On                ; On            ;
+; Detect setup and hold time violations                                                      ; Off               ; Off           ;
+; Detect glitches                                                                            ; Off               ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off               ; Off           ;
+; Generate Signal Activity File                                                              ; Off               ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off               ; Off           ;
+; Group bus channels in simulation results                                                   ; Off               ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On                ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE        ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off               ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off               ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto              ; Auto          ;
++--------------------------------------------------------------------------------------------+-------------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II to view the waveform report data.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;      13.64 % ;
+; Total nodes checked                                 ; 85           ;
+; Total output ports checked                          ; 110          ;
+; Total output ports with complete 1/0-value coverage ; 15           ;
+; Total output ports with no 1/0-value coverage       ; 94           ;
+; Total output ports with no 1-value coverage         ; 94           ;
+; Total output ports with no 0-value coverage         ; 95           ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++------------------------------------------------------------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                                                                      ;
++-----------------------------------------------+-----------------------------------------------+------------------+
+; Node Name                                     ; Output Port Name                              ; Output Port Type ;
++-----------------------------------------------+-----------------------------------------------+------------------+
+; |counter_mod_16|divider:comb_4|Add0~1         ; |counter_mod_16|divider:comb_4|Add0~1         ; sumout           ;
+; |counter_mod_16|divider:comb_4|Add0~1         ; |counter_mod_16|divider:comb_4|Add0~2         ; cout             ;
+; |counter_mod_16|divider:comb_4|Add0~5         ; |counter_mod_16|divider:comb_4|Add0~5         ; sumout           ;
+; |counter_mod_16|divider:comb_4|Add0~5         ; |counter_mod_16|divider:comb_4|Add0~6         ; cout             ;
+; |counter_mod_16|divider:comb_4|Add0~9         ; |counter_mod_16|divider:comb_4|Add0~9         ; sumout           ;
+; |counter_mod_16|divider:comb_4|Add0~9         ; |counter_mod_16|divider:comb_4|Add0~10        ; cout             ;
+; |counter_mod_16|divider:comb_4|Add0~13        ; |counter_mod_16|divider:comb_4|Add0~13        ; sumout           ;
+; |counter_mod_16|divider:comb_4|Add0~13        ; |counter_mod_16|divider:comb_4|Add0~14        ; cout             ;
+; |counter_mod_16|divider:comb_4|d_divider[3]   ; |counter_mod_16|divider:comb_4|d_divider[3]   ; regout           ;
+; |counter_mod_16|divider:comb_4|d_divider[2]   ; |counter_mod_16|divider:comb_4|d_divider[2]   ; regout           ;
+; |counter_mod_16|divider:comb_4|d_divider[0]   ; |counter_mod_16|divider:comb_4|d_divider[0]   ; regout           ;
+; |counter_mod_16|divider:comb_4|d_divider[1]   ; |counter_mod_16|divider:comb_4|d_divider[1]   ; regout           ;
+; |counter_mod_16|divider:comb_4|d_divider[0]~0 ; |counter_mod_16|divider:comb_4|d_divider[0]~0 ; combout          ;
+; |counter_mod_16|clk                           ; |counter_mod_16|clk~corein                    ; combout          ;
+; |counter_mod_16|clk~clkctrl                   ; |counter_mod_16|clk~clkctrl                   ; outclk           ;
++-----------------------------------------------+-----------------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++--------------------------------------------------------------------------------------------------------------------------------+
+; Missing 1-Value Coverage                                                                                                       ;
++------------------------------------------------------+------------------------------------------------------+------------------+
+; Node Name                                            ; Output Port Name                                     ; Output Port Type ;
++------------------------------------------------------+------------------------------------------------------+------------------+
+; |counter_mod_16|counter:comb_5|Add0~3                ; |counter_mod_16|counter:comb_5|Add0~3                ; cout             ;
+; |counter_mod_16|counter:comb_5|Add0~6                ; |counter_mod_16|counter:comb_5|Add0~6                ; sumout           ;
+; |counter_mod_16|counter:comb_5|Add0~6                ; |counter_mod_16|counter:comb_5|Add0~7                ; cout             ;
+; |counter_mod_16|counter:comb_5|Add0~10               ; |counter_mod_16|counter:comb_5|Add0~10               ; sumout           ;
+; |counter_mod_16|counter:comb_5|Add0~10               ; |counter_mod_16|counter:comb_5|Add0~11               ; cout             ;
+; |counter_mod_16|counter:comb_5|Add0~14               ; |counter_mod_16|counter:comb_5|Add0~14               ; sumout           ;
+; |counter_mod_16|divider:comb_4|Add0~17               ; |counter_mod_16|divider:comb_4|Add0~17               ; sumout           ;
+; |counter_mod_16|divider:comb_4|Add0~17               ; |counter_mod_16|divider:comb_4|Add0~18               ; cout             ;
+; |counter_mod_16|divider:comb_4|Add0~21               ; |counter_mod_16|divider:comb_4|Add0~21               ; sumout           ;
+; |counter_mod_16|divider:comb_4|Add0~21               ; |counter_mod_16|divider:comb_4|Add0~22               ; cout             ;
+; |counter_mod_16|divider:comb_4|Add0~25               ; |counter_mod_16|divider:comb_4|Add0~25               ; sumout           ;
+; |counter_mod_16|divider:comb_4|Add0~25               ; |counter_mod_16|divider:comb_4|Add0~26               ; cout             ;
+; |counter_mod_16|divider:comb_4|Add0~29               ; |counter_mod_16|divider:comb_4|Add0~29               ; sumout           ;
+; |counter_mod_16|divider:comb_4|Add0~29               ; |counter_mod_16|divider:comb_4|Add0~30               ; cout             ;
+; |counter_mod_16|divider:comb_4|Add0~33               ; |counter_mod_16|divider:comb_4|Add0~33               ; sumout           ;
+; |counter_mod_16|divider:comb_4|Add0~33               ; |counter_mod_16|divider:comb_4|Add0~34               ; cout             ;
+; |counter_mod_16|divider:comb_4|Add0~37               ; |counter_mod_16|divider:comb_4|Add0~37               ; sumout           ;
+; |counter_mod_16|divider:comb_4|Add0~37               ; |counter_mod_16|divider:comb_4|Add0~38               ; cout             ;
+; |counter_mod_16|divider:comb_4|Add0~41               ; |counter_mod_16|divider:comb_4|Add0~41               ; sumout           ;
+; |counter_mod_16|divider:comb_4|Add0~41               ; |counter_mod_16|divider:comb_4|Add0~42               ; cout             ;
+; |counter_mod_16|divider:comb_4|Add0~45               ; |counter_mod_16|divider:comb_4|Add0~45               ; sumout           ;
+; |counter_mod_16|divider:comb_4|Add0~45               ; |counter_mod_16|divider:comb_4|Add0~46               ; cout             ;
+; |counter_mod_16|divider:comb_4|Add0~49               ; |counter_mod_16|divider:comb_4|Add0~49               ; sumout           ;
+; |counter_mod_16|divider:comb_4|Add0~49               ; |counter_mod_16|divider:comb_4|Add0~50               ; cout             ;
+; |counter_mod_16|divider:comb_4|Add0~53               ; |counter_mod_16|divider:comb_4|Add0~53               ; sumout           ;
+; |counter_mod_16|divider:comb_4|Add0~53               ; |counter_mod_16|divider:comb_4|Add0~54               ; cout             ;
+; |counter_mod_16|divider:comb_4|Add0~57               ; |counter_mod_16|divider:comb_4|Add0~57               ; sumout           ;
+; |counter_mod_16|divider:comb_4|Add0~57               ; |counter_mod_16|divider:comb_4|Add0~58               ; cout             ;
+; |counter_mod_16|divider:comb_4|Add0~61               ; |counter_mod_16|divider:comb_4|Add0~61               ; sumout           ;
+; |counter_mod_16|divider:comb_4|Add0~61               ; |counter_mod_16|divider:comb_4|Add0~62               ; cout             ;
+; |counter_mod_16|divider:comb_4|Add0~65               ; |counter_mod_16|divider:comb_4|Add0~65               ; sumout           ;
+; |counter_mod_16|divider:comb_4|Add0~65               ; |counter_mod_16|divider:comb_4|Add0~66               ; cout             ;
+; |counter_mod_16|divider:comb_4|Add0~69               ; |counter_mod_16|divider:comb_4|Add0~69               ; sumout           ;
+; |counter_mod_16|divider:comb_4|Add0~69               ; |counter_mod_16|divider:comb_4|Add0~70               ; cout             ;
+; |counter_mod_16|divider:comb_4|Add0~73               ; |counter_mod_16|divider:comb_4|Add0~73               ; sumout           ;
+; |counter_mod_16|divider:comb_4|Add0~73               ; |counter_mod_16|divider:comb_4|Add0~74               ; cout             ;
+; |counter_mod_16|divider:comb_4|Add0~77               ; |counter_mod_16|divider:comb_4|Add0~77               ; sumout           ;
+; |counter_mod_16|divider:comb_4|Add0~77               ; |counter_mod_16|divider:comb_4|Add0~78               ; cout             ;
+; |counter_mod_16|divider:comb_4|Add0~81               ; |counter_mod_16|divider:comb_4|Add0~81               ; sumout           ;
+; |counter_mod_16|divider:comb_4|Add0~81               ; |counter_mod_16|divider:comb_4|Add0~82               ; cout             ;
+; |counter_mod_16|divider:comb_4|Add0~85               ; |counter_mod_16|divider:comb_4|Add0~85               ; sumout           ;
+; |counter_mod_16|divider:comb_4|Add0~85               ; |counter_mod_16|divider:comb_4|Add0~86               ; cout             ;
+; |counter_mod_16|divider:comb_4|Add0~89               ; |counter_mod_16|divider:comb_4|Add0~89               ; sumout           ;
+; |counter_mod_16|divider:comb_4|Add0~89               ; |counter_mod_16|divider:comb_4|Add0~90               ; cout             ;
+; |counter_mod_16|divider:comb_4|Add0~93               ; |counter_mod_16|divider:comb_4|Add0~93               ; sumout           ;
+; |counter_mod_16|counter:comb_5|value[3]              ; |counter_mod_16|counter:comb_5|value[3]              ; regout           ;
+; |counter_mod_16|counter:comb_5|value[1]              ; |counter_mod_16|counter:comb_5|value[1]              ; regout           ;
+; |counter_mod_16|counter:comb_5|value[2]              ; |counter_mod_16|counter:comb_5|value[2]              ; regout           ;
+; |counter_mod_16|transcoder:comb_6|WideOr0~0          ; |counter_mod_16|transcoder:comb_6|WideOr0~0          ; combout          ;
+; |counter_mod_16|counter:comb_5|value[0]              ; |counter_mod_16|counter:comb_5|value[0]              ; regout           ;
+; |counter_mod_16|transcoder:comb_6|WideOr1~0          ; |counter_mod_16|transcoder:comb_6|WideOr1~0          ; combout          ;
+; |counter_mod_16|transcoder:comb_6|WideOr2~0          ; |counter_mod_16|transcoder:comb_6|WideOr2~0          ; combout          ;
+; |counter_mod_16|transcoder:comb_6|c2~1               ; |counter_mod_16|transcoder:comb_6|c2~1               ; combout          ;
+; |counter_mod_16|transcoder:comb_6|WideOr3~0          ; |counter_mod_16|transcoder:comb_6|WideOr3~0          ; combout          ;
+; |counter_mod_16|transcoder:comb_6|WideOr4~0          ; |counter_mod_16|transcoder:comb_6|WideOr4~0          ; combout          ;
+; |counter_mod_16|transcoder:comb_6|WideOr5~0          ; |counter_mod_16|transcoder:comb_6|WideOr5~0          ; combout          ;
+; |counter_mod_16|transcoder:comb_6|WideOr6~0          ; |counter_mod_16|transcoder:comb_6|WideOr6~0          ; combout          ;
+; |counter_mod_16|divider:comb_4|d_divider[24]         ; |counter_mod_16|divider:comb_4|d_divider[24]         ; regout           ;
+; |counter_mod_16|divider:comb_4|d_divider[23]         ; |counter_mod_16|divider:comb_4|d_divider[23]         ; regout           ;
+; |counter_mod_16|divider:comb_4|d_divider[22]         ; |counter_mod_16|divider:comb_4|d_divider[22]         ; regout           ;
+; |counter_mod_16|divider:comb_4|d_divider[21]         ; |counter_mod_16|divider:comb_4|d_divider[21]         ; regout           ;
+; |counter_mod_16|divider:comb_4|d_divider[20]         ; |counter_mod_16|divider:comb_4|d_divider[20]         ; regout           ;
+; |counter_mod_16|divider:comb_4|d_divider[19]         ; |counter_mod_16|divider:comb_4|d_divider[19]         ; regout           ;
+; |counter_mod_16|divider:comb_4|d_divider[18]         ; |counter_mod_16|divider:comb_4|d_divider[18]         ; regout           ;
+; |counter_mod_16|divider:comb_4|d_divider[17]         ; |counter_mod_16|divider:comb_4|d_divider[17]         ; regout           ;
+; |counter_mod_16|divider:comb_4|d_divider[16]         ; |counter_mod_16|divider:comb_4|d_divider[16]         ; regout           ;
+; |counter_mod_16|divider:comb_4|d_divider[15]         ; |counter_mod_16|divider:comb_4|d_divider[15]         ; regout           ;
+; |counter_mod_16|divider:comb_4|d_divider[14]         ; |counter_mod_16|divider:comb_4|d_divider[14]         ; regout           ;
+; |counter_mod_16|divider:comb_4|d_divider[13]         ; |counter_mod_16|divider:comb_4|d_divider[13]         ; regout           ;
+; |counter_mod_16|divider:comb_4|d_divider[12]         ; |counter_mod_16|divider:comb_4|d_divider[12]         ; regout           ;
+; |counter_mod_16|divider:comb_4|d_divider[11]         ; |counter_mod_16|divider:comb_4|d_divider[11]         ; regout           ;
+; |counter_mod_16|divider:comb_4|d_divider[10]         ; |counter_mod_16|divider:comb_4|d_divider[10]         ; regout           ;
+; |counter_mod_16|divider:comb_4|d_divider[9]          ; |counter_mod_16|divider:comb_4|d_divider[9]          ; regout           ;
+; |counter_mod_16|divider:comb_4|d_divider[8]          ; |counter_mod_16|divider:comb_4|d_divider[8]          ; regout           ;
+; |counter_mod_16|divider:comb_4|d_divider[7]          ; |counter_mod_16|divider:comb_4|d_divider[7]          ; regout           ;
+; |counter_mod_16|divider:comb_4|d_divider[6]          ; |counter_mod_16|divider:comb_4|d_divider[6]          ; regout           ;
+; |counter_mod_16|divider:comb_4|d_divider[5]          ; |counter_mod_16|divider:comb_4|d_divider[5]          ; regout           ;
+; |counter_mod_16|counter:comb_5|value[0]~4            ; |counter_mod_16|counter:comb_5|value[0]~4            ; combout          ;
+; |counter_mod_16|a                                    ; |counter_mod_16|a                                    ; padio            ;
+; |counter_mod_16|b                                    ; |counter_mod_16|b                                    ; padio            ;
+; |counter_mod_16|c                                    ; |counter_mod_16|c                                    ; padio            ;
+; |counter_mod_16|d                                    ; |counter_mod_16|d                                    ; padio            ;
+; |counter_mod_16|e                                    ; |counter_mod_16|e                                    ; padio            ;
+; |counter_mod_16|f                                    ; |counter_mod_16|f                                    ; padio            ;
+; |counter_mod_16|g                                    ; |counter_mod_16|g                                    ; padio            ;
+; |counter_mod_16|a2                                   ; |counter_mod_16|a2                                   ; padio            ;
+; |counter_mod_16|b2                                   ; |counter_mod_16|b2                                   ; padio            ;
+; |counter_mod_16|c2                                   ; |counter_mod_16|c2                                   ; padio            ;
+; |counter_mod_16|d2                                   ; |counter_mod_16|d2                                   ; padio            ;
+; |counter_mod_16|e2                                   ; |counter_mod_16|e2                                   ; padio            ;
+; |counter_mod_16|f2                                   ; |counter_mod_16|f2                                   ; padio            ;
+; |counter_mod_16|g2                                   ; |counter_mod_16|g2                                   ; padio            ;
+; |counter_mod_16|counter_direction                    ; |counter_mod_16|counter_direction~corein             ; combout          ;
+; |counter_mod_16|divider:comb_4|d_divider[24]~clkctrl ; |counter_mod_16|divider:comb_4|d_divider[24]~clkctrl ; outclk           ;
++------------------------------------------------------+------------------------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++--------------------------------------------------------------------------------------------------------------------------------+
+; Missing 0-Value Coverage                                                                                                       ;
++------------------------------------------------------+------------------------------------------------------+------------------+
+; Node Name                                            ; Output Port Name                                     ; Output Port Type ;
++------------------------------------------------------+------------------------------------------------------+------------------+
+; |counter_mod_16|counter:comb_5|Add0~3                ; |counter_mod_16|counter:comb_5|Add0~3                ; cout             ;
+; |counter_mod_16|counter:comb_5|Add0~6                ; |counter_mod_16|counter:comb_5|Add0~6                ; sumout           ;
+; |counter_mod_16|counter:comb_5|Add0~6                ; |counter_mod_16|counter:comb_5|Add0~7                ; cout             ;
+; |counter_mod_16|counter:comb_5|Add0~10               ; |counter_mod_16|counter:comb_5|Add0~10               ; sumout           ;
+; |counter_mod_16|counter:comb_5|Add0~10               ; |counter_mod_16|counter:comb_5|Add0~11               ; cout             ;
+; |counter_mod_16|counter:comb_5|Add0~14               ; |counter_mod_16|counter:comb_5|Add0~14               ; sumout           ;
+; |counter_mod_16|divider:comb_4|Add0~17               ; |counter_mod_16|divider:comb_4|Add0~17               ; sumout           ;
+; |counter_mod_16|divider:comb_4|Add0~17               ; |counter_mod_16|divider:comb_4|Add0~18               ; cout             ;
+; |counter_mod_16|divider:comb_4|Add0~21               ; |counter_mod_16|divider:comb_4|Add0~21               ; sumout           ;
+; |counter_mod_16|divider:comb_4|Add0~21               ; |counter_mod_16|divider:comb_4|Add0~22               ; cout             ;
+; |counter_mod_16|divider:comb_4|Add0~25               ; |counter_mod_16|divider:comb_4|Add0~25               ; sumout           ;
+; |counter_mod_16|divider:comb_4|Add0~25               ; |counter_mod_16|divider:comb_4|Add0~26               ; cout             ;
+; |counter_mod_16|divider:comb_4|Add0~29               ; |counter_mod_16|divider:comb_4|Add0~29               ; sumout           ;
+; |counter_mod_16|divider:comb_4|Add0~29               ; |counter_mod_16|divider:comb_4|Add0~30               ; cout             ;
+; |counter_mod_16|divider:comb_4|Add0~33               ; |counter_mod_16|divider:comb_4|Add0~33               ; sumout           ;
+; |counter_mod_16|divider:comb_4|Add0~33               ; |counter_mod_16|divider:comb_4|Add0~34               ; cout             ;
+; |counter_mod_16|divider:comb_4|Add0~37               ; |counter_mod_16|divider:comb_4|Add0~37               ; sumout           ;
+; |counter_mod_16|divider:comb_4|Add0~37               ; |counter_mod_16|divider:comb_4|Add0~38               ; cout             ;
+; |counter_mod_16|divider:comb_4|Add0~41               ; |counter_mod_16|divider:comb_4|Add0~41               ; sumout           ;
+; |counter_mod_16|divider:comb_4|Add0~41               ; |counter_mod_16|divider:comb_4|Add0~42               ; cout             ;
+; |counter_mod_16|divider:comb_4|Add0~45               ; |counter_mod_16|divider:comb_4|Add0~45               ; sumout           ;
+; |counter_mod_16|divider:comb_4|Add0~45               ; |counter_mod_16|divider:comb_4|Add0~46               ; cout             ;
+; |counter_mod_16|divider:comb_4|Add0~49               ; |counter_mod_16|divider:comb_4|Add0~49               ; sumout           ;
+; |counter_mod_16|divider:comb_4|Add0~49               ; |counter_mod_16|divider:comb_4|Add0~50               ; cout             ;
+; |counter_mod_16|divider:comb_4|Add0~53               ; |counter_mod_16|divider:comb_4|Add0~53               ; sumout           ;
+; |counter_mod_16|divider:comb_4|Add0~53               ; |counter_mod_16|divider:comb_4|Add0~54               ; cout             ;
+; |counter_mod_16|divider:comb_4|Add0~57               ; |counter_mod_16|divider:comb_4|Add0~57               ; sumout           ;
+; |counter_mod_16|divider:comb_4|Add0~57               ; |counter_mod_16|divider:comb_4|Add0~58               ; cout             ;
+; |counter_mod_16|divider:comb_4|Add0~61               ; |counter_mod_16|divider:comb_4|Add0~61               ; sumout           ;
+; |counter_mod_16|divider:comb_4|Add0~61               ; |counter_mod_16|divider:comb_4|Add0~62               ; cout             ;
+; |counter_mod_16|divider:comb_4|Add0~65               ; |counter_mod_16|divider:comb_4|Add0~65               ; sumout           ;
+; |counter_mod_16|divider:comb_4|Add0~65               ; |counter_mod_16|divider:comb_4|Add0~66               ; cout             ;
+; |counter_mod_16|divider:comb_4|Add0~69               ; |counter_mod_16|divider:comb_4|Add0~69               ; sumout           ;
+; |counter_mod_16|divider:comb_4|Add0~69               ; |counter_mod_16|divider:comb_4|Add0~70               ; cout             ;
+; |counter_mod_16|divider:comb_4|Add0~73               ; |counter_mod_16|divider:comb_4|Add0~73               ; sumout           ;
+; |counter_mod_16|divider:comb_4|Add0~73               ; |counter_mod_16|divider:comb_4|Add0~74               ; cout             ;
+; |counter_mod_16|divider:comb_4|Add0~77               ; |counter_mod_16|divider:comb_4|Add0~77               ; sumout           ;
+; |counter_mod_16|divider:comb_4|Add0~77               ; |counter_mod_16|divider:comb_4|Add0~78               ; cout             ;
+; |counter_mod_16|divider:comb_4|Add0~81               ; |counter_mod_16|divider:comb_4|Add0~81               ; sumout           ;
+; |counter_mod_16|divider:comb_4|Add0~81               ; |counter_mod_16|divider:comb_4|Add0~82               ; cout             ;
+; |counter_mod_16|divider:comb_4|Add0~85               ; |counter_mod_16|divider:comb_4|Add0~85               ; sumout           ;
+; |counter_mod_16|divider:comb_4|Add0~85               ; |counter_mod_16|divider:comb_4|Add0~86               ; cout             ;
+; |counter_mod_16|divider:comb_4|Add0~89               ; |counter_mod_16|divider:comb_4|Add0~89               ; sumout           ;
+; |counter_mod_16|divider:comb_4|Add0~89               ; |counter_mod_16|divider:comb_4|Add0~90               ; cout             ;
+; |counter_mod_16|divider:comb_4|Add0~93               ; |counter_mod_16|divider:comb_4|Add0~93               ; sumout           ;
+; |counter_mod_16|counter:comb_5|value[3]              ; |counter_mod_16|counter:comb_5|value[3]              ; regout           ;
+; |counter_mod_16|counter:comb_5|value[1]              ; |counter_mod_16|counter:comb_5|value[1]              ; regout           ;
+; |counter_mod_16|counter:comb_5|value[2]              ; |counter_mod_16|counter:comb_5|value[2]              ; regout           ;
+; |counter_mod_16|transcoder:comb_6|WideOr0~0          ; |counter_mod_16|transcoder:comb_6|WideOr0~0          ; combout          ;
+; |counter_mod_16|counter:comb_5|value[0]              ; |counter_mod_16|counter:comb_5|value[0]              ; regout           ;
+; |counter_mod_16|transcoder:comb_6|WideOr1~0          ; |counter_mod_16|transcoder:comb_6|WideOr1~0          ; combout          ;
+; |counter_mod_16|transcoder:comb_6|WideOr2~0          ; |counter_mod_16|transcoder:comb_6|WideOr2~0          ; combout          ;
+; |counter_mod_16|transcoder:comb_6|c2~1               ; |counter_mod_16|transcoder:comb_6|c2~1               ; combout          ;
+; |counter_mod_16|transcoder:comb_6|WideOr3~0          ; |counter_mod_16|transcoder:comb_6|WideOr3~0          ; combout          ;
+; |counter_mod_16|transcoder:comb_6|WideOr4~0          ; |counter_mod_16|transcoder:comb_6|WideOr4~0          ; combout          ;
+; |counter_mod_16|transcoder:comb_6|WideOr5~0          ; |counter_mod_16|transcoder:comb_6|WideOr5~0          ; combout          ;
+; |counter_mod_16|transcoder:comb_6|WideOr6~0          ; |counter_mod_16|transcoder:comb_6|WideOr6~0          ; combout          ;
+; |counter_mod_16|divider:comb_4|d_divider[24]         ; |counter_mod_16|divider:comb_4|d_divider[24]         ; regout           ;
+; |counter_mod_16|divider:comb_4|d_divider[23]         ; |counter_mod_16|divider:comb_4|d_divider[23]         ; regout           ;
+; |counter_mod_16|divider:comb_4|d_divider[22]         ; |counter_mod_16|divider:comb_4|d_divider[22]         ; regout           ;
+; |counter_mod_16|divider:comb_4|d_divider[21]         ; |counter_mod_16|divider:comb_4|d_divider[21]         ; regout           ;
+; |counter_mod_16|divider:comb_4|d_divider[20]         ; |counter_mod_16|divider:comb_4|d_divider[20]         ; regout           ;
+; |counter_mod_16|divider:comb_4|d_divider[19]         ; |counter_mod_16|divider:comb_4|d_divider[19]         ; regout           ;
+; |counter_mod_16|divider:comb_4|d_divider[18]         ; |counter_mod_16|divider:comb_4|d_divider[18]         ; regout           ;
+; |counter_mod_16|divider:comb_4|d_divider[17]         ; |counter_mod_16|divider:comb_4|d_divider[17]         ; regout           ;
+; |counter_mod_16|divider:comb_4|d_divider[16]         ; |counter_mod_16|divider:comb_4|d_divider[16]         ; regout           ;
+; |counter_mod_16|divider:comb_4|d_divider[15]         ; |counter_mod_16|divider:comb_4|d_divider[15]         ; regout           ;
+; |counter_mod_16|divider:comb_4|d_divider[14]         ; |counter_mod_16|divider:comb_4|d_divider[14]         ; regout           ;
+; |counter_mod_16|divider:comb_4|d_divider[13]         ; |counter_mod_16|divider:comb_4|d_divider[13]         ; regout           ;
+; |counter_mod_16|divider:comb_4|d_divider[12]         ; |counter_mod_16|divider:comb_4|d_divider[12]         ; regout           ;
+; |counter_mod_16|divider:comb_4|d_divider[11]         ; |counter_mod_16|divider:comb_4|d_divider[11]         ; regout           ;
+; |counter_mod_16|divider:comb_4|d_divider[10]         ; |counter_mod_16|divider:comb_4|d_divider[10]         ; regout           ;
+; |counter_mod_16|divider:comb_4|d_divider[9]          ; |counter_mod_16|divider:comb_4|d_divider[9]          ; regout           ;
+; |counter_mod_16|divider:comb_4|d_divider[8]          ; |counter_mod_16|divider:comb_4|d_divider[8]          ; regout           ;
+; |counter_mod_16|divider:comb_4|d_divider[7]          ; |counter_mod_16|divider:comb_4|d_divider[7]          ; regout           ;
+; |counter_mod_16|divider:comb_4|d_divider[6]          ; |counter_mod_16|divider:comb_4|d_divider[6]          ; regout           ;
+; |counter_mod_16|divider:comb_4|d_divider[5]          ; |counter_mod_16|divider:comb_4|d_divider[5]          ; regout           ;
+; |counter_mod_16|divider:comb_4|d_divider[4]          ; |counter_mod_16|divider:comb_4|d_divider[4]          ; regout           ;
+; |counter_mod_16|counter:comb_5|value[0]~4            ; |counter_mod_16|counter:comb_5|value[0]~4            ; combout          ;
+; |counter_mod_16|a                                    ; |counter_mod_16|a                                    ; padio            ;
+; |counter_mod_16|b                                    ; |counter_mod_16|b                                    ; padio            ;
+; |counter_mod_16|c                                    ; |counter_mod_16|c                                    ; padio            ;
+; |counter_mod_16|d                                    ; |counter_mod_16|d                                    ; padio            ;
+; |counter_mod_16|e                                    ; |counter_mod_16|e                                    ; padio            ;
+; |counter_mod_16|f                                    ; |counter_mod_16|f                                    ; padio            ;
+; |counter_mod_16|g                                    ; |counter_mod_16|g                                    ; padio            ;
+; |counter_mod_16|a2                                   ; |counter_mod_16|a2                                   ; padio            ;
+; |counter_mod_16|b2                                   ; |counter_mod_16|b2                                   ; padio            ;
+; |counter_mod_16|c2                                   ; |counter_mod_16|c2                                   ; padio            ;
+; |counter_mod_16|d2                                   ; |counter_mod_16|d2                                   ; padio            ;
+; |counter_mod_16|e2                                   ; |counter_mod_16|e2                                   ; padio            ;
+; |counter_mod_16|f2                                   ; |counter_mod_16|f2                                   ; padio            ;
+; |counter_mod_16|g2                                   ; |counter_mod_16|g2                                   ; padio            ;
+; |counter_mod_16|counter_direction                    ; |counter_mod_16|counter_direction~corein             ; combout          ;
+; |counter_mod_16|divider:comb_4|d_divider[24]~clkctrl ; |counter_mod_16|divider:comb_4|d_divider[24]~clkctrl ; outclk           ;
++------------------------------------------------------+------------------------------------------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II Simulator
+    Info: Version 9.0 Build 235 06/17/2009 Service Pack 2 SJ Web Edition
+    Info: Processing started: Thu Jan 04 15:44:23 2018
+Info: Command: quartus_sim --read_settings_files=on --write_settings_files=off counter_mod_16 -c counter_mod_16
+Warning: Invalid vector source file type specified
+Info: Using vector source file "C:/Users/Radzio/Desktop/fpga/verilog/counter_mod_16.vwf"
+Info: Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info: Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Info: Simulation partitioned into 1 sub-simulations
+Info: Simulation coverage is      13.64 %
+Info: Number of transitions in simulation is 329
+Info: Quartus II Simulator was successful. 0 errors, 1 warning
+    Info: Peak virtual memory: 167 megabytes
+    Info: Processing ended: Thu Jan 04 15:44:26 2018
+    Info: Elapsed time: 00:00:03
+    Info: Total CPU time (on all processors): 00:00:02
+
+

@@ -1,0 +1,84 @@
+|counter_mod_16
+clk => clk~0.IN1
+counter_direction => counter_direction~0.IN1
+a <= transcoder:comb_6.port1
+b <= transcoder:comb_6.port2
+c <= transcoder:comb_6.port3
+d <= transcoder:comb_6.port4
+e <= transcoder:comb_6.port5
+f <= transcoder:comb_6.port6
+g <= transcoder:comb_6.port7
+a2 <= transcoder:comb_6.port8
+b2 <= transcoder:comb_6.port9
+c2 <= transcoder:comb_6.port10
+d2 <= transcoder:comb_6.port11
+e2 <= transcoder:comb_6.port12
+f2 <= transcoder:comb_6.port13
+g2 <= transcoder:comb_6.port14
+
+
+|counter_mod_16|divider:comb_4
+clk => d_divider[24].CLK
+clk => d_divider[23].CLK
+clk => d_divider[22].CLK
+clk => d_divider[21].CLK
+clk => d_divider[20].CLK
+clk => d_divider[19].CLK
+clk => d_divider[18].CLK
+clk => d_divider[17].CLK
+clk => d_divider[16].CLK
+clk => d_divider[15].CLK
+clk => d_divider[14].CLK
+clk => d_divider[13].CLK
+clk => d_divider[12].CLK
+clk => d_divider[11].CLK
+clk => d_divider[10].CLK
+clk => d_divider[9].CLK
+clk => d_divider[8].CLK
+clk => d_divider[7].CLK
+clk => d_divider[6].CLK
+clk => d_divider[5].CLK
+clk => d_divider[4].CLK
+clk => d_divider[3].CLK
+clk => d_divider[2].CLK
+clk => d_divider[1].CLK
+clk => d_divider[0].CLK
+clk_divided <= d_divider[24].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|counter_mod_16|counter:comb_5
+clk => value[3]~reg0.CLK
+clk => value[2]~reg0.CLK
+clk => value[1]~reg0.CLK
+clk => value[0]~reg0.CLK
+counting_direction => value~3.OUTPUTSELECT
+counting_direction => value~2.OUTPUTSELECT
+counting_direction => value~1.OUTPUTSELECT
+counting_direction => value~0.OUTPUTSELECT
+value[0] <= value[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+value[1] <= value[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+value[2] <= value[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+value[3] <= value[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|counter_mod_16|transcoder:comb_6
+counter[0] => Decoder0.IN3
+counter[1] => Decoder0.IN2
+counter[2] => Decoder0.IN1
+counter[3] => Decoder0.IN0
+a <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+b <= <GND>
+c <= <GND>
+d <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+e <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+f <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+g <= <VCC>
+a2 <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+b2 <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+c2 <= c2~0.DB_MAX_OUTPUT_PORT_TYPE
+d2 <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+e2 <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+f2 <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+g2 <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+
+
